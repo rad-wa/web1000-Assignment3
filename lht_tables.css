@@ -41,6 +41,21 @@ position: relative;
 padding-left: 40%;
 min-height: 40 px;
    }
+      tr:nth-of-type(odd)
+   {
+      background-color: rgb(255, 235, 178);
+      border: 2px solid gray;
+   }
+   td::before
+   {
+      content: attr(data-date);
+      position: absolute;
+      left: 0;
+      top: 0;
+      padding: 5px;
+      width: 40%;
+   }
+
 }
 
 
@@ -51,7 +66,22 @@ min-height: 40 px;
    Tablet and Desktop Styles: greater than 640px
    =============================================
 */
-@media only screen and (min-width: 640px) {}
+@media only screen and (min-width: 641px) 
+{
+table
+{
+   background-image: url('lht_photo1.png');
+   background-repeat: no-repeat;
+   background-position: bottom right;
+   background-size: 40%;
+   border: 6px double rgb(154, 64, 3);
+   border-collapse: collapse;
+   margin-top: 20px;
+   margin-bottom: 20px;
+   margin-left: auto;
+   margin-right: auto;
+   table-layout: fixed;
+   width: 85%;
+}
+}
 
-
-@media only screen and (min-width: 768px) {}

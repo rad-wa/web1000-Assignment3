@@ -83,5 +83,15 @@ table
    table-layout: fixed;
    width: 85%;
 }
+thead th,td
+{
+border-style: 1 px solid gray;
+font-size: .85em;
+font-weight: normal;
+padding: 5px;
+text-align: top;
+width: 14.28%;
+word-wrap: break-word;
+}
 }
 
